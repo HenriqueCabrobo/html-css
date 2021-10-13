@@ -1,0 +1,44 @@
+Paleta de Cores
+
+Black #000000
+Irresistible #AA4465
+Light Gray #CDD7D6
+Grullo #B3A394
+Celadon Blue #407899
+
+Paleta de Cores color.adobe gray-cian
+
+#5C548A  #5A6194  #53637D  #5A8094  #54858A
+
+
+---Configurar Vídeo em HTML & CSS---
+
+criar uma div com uma class e dentro dessa div adicionar o iframe do vídeo com uma class também.
+EX:
+
+---HTML---
+
+<div class="conteiner">
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer;
+	autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+</div>
+
+---CSS---
+
+.conteiner {
+    background-color: var(--cor5);//opicional
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+}
+
+.video {
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    width: 90%;
+    height: 90%;
+}
+
