@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /* Shorthand - background
+                color > imagem > position > repeat > [size] > attachment
+                o size está em couchetes para enfatizar que apesar da documentação dizer que é possível, na prática não funcionou no shorthand.
+                
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +41,10 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci temporibus debitis dolorum. Repellat eveniet provident repellendus blanditiis tempore ut autem unde, aperiam dolor exercitationem, reiciendis fugiat eaque eius repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ea inventore numquam aperiam animi tempora natus tempore beatae eos ad magnam quos est nam blanditiis accusantium ex nostrum, porro impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sunt repudiandae voluptas modi. Sint iste pariatur optio labore eius accusamus sapiente qui totam odio laborum asperiores necessitatibus tempora, laboriosam minus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci temporibus debitis dolorum. Repellat eveniet provident repellendus blanditiis tempore ut autem unde, aperiam dolor exercitationem, reiciendis fugiat eaque eius repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ea inventore numquam aperiam animi tempora natus tempore beatae eos ad magnam quos est nam blanditiis accusantium ex nostrum, porro impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sunt repudiandae voluptas modi. Sint iste pariatur optio labore eius accusamus sapiente qui totam odio laborum asperiores necessitatibus tempora, laboriosam minus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci temporibus debitis dolorum. Repellat eveniet provident repellendus blanditiis tempore ut autem unde, aperiam dolor exercitationem, reiciendis fugiat eaque eius repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ea inventore numquam aperiam animi tempora natus tempore beatae eos ad magnam quos est nam blanditiis accusantium ex nostrum, porro impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sunt repudiandae voluptas modi. Sint iste pariatur optio labore eius accusamus sapiente qui totam odio laborum asperiores necessitatibus tempora, laboriosam minus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci temporibus debitis dolorum. Repellat eveniet provident repellendus blanditiis tempore ut autem unde, aperiam dolor exercitationem, reiciendis fugiat eaque eius repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ea inventore numquam aperiam animi tempora natus tempore beatae eos ad magnam quos est nam blanditiis accusantium ex nostrum, porro impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sunt repudiandae voluptas modi. Sint iste pariatur optio labore eius accusamus sapiente qui totam odio laborum asperiores necessitatibus tempora, laboriosam minus!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi adipisci temporibus debitis dolorum. Repellat eveniet provident repellendus blanditiis tempore ut autem unde, aperiam dolor exercitationem, reiciendis fugiat eaque eius repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates ea inventore numquam aperiam animi tempora natus tempore beatae eos ad magnam quos est nam blanditiis accusantium ex nostrum, porro impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sunt repudiandae voluptas modi. Sint iste pariatur optio labore eius accusamus sapiente qui totam odio laborum asperiores necessitatibus tempora, laboriosam minus!</p>
     </main>
 </body>
